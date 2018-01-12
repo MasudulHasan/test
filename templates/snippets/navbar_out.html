@@ -1,0 +1,31 @@
+{#<h1>Rent It</h1>#}
+{#<a href="/">Home</a>#}
+{#<a href="/about/">About</a>#}
+{#<a href="/contact/">Contact</a>#}
+
+{% load staticfiles %}
+
+<div class="header-v1">
+    <!-- Topbar -->
+    <div class="topbar-v1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-inline top-v1-contacts">
+                        <a class="logo" href={% url "home" %} >
+                            {#style="background-image: url('{% static "images/background.jpg"%}')";#}
+					        <img src={% static "images/logo.png"%} alt="Logo">
+				        </a>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <ul class="list-inline top-v1-data">
+                        <li><a href={% url "register" %} >Sign up</a></li>
+                        <li><a href={% url "login" %} >Log In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

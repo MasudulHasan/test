@@ -1,0 +1,62 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>{% block head_title %} RentIt {% endblock head_title %}</title>
+    <!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Web Fonts -->
+	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+
+    {% include 'snippets/css.html' %}
+    {% block custom_css %}  {% endblock custom_css %}
+
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+</head>
+{#style="background-image: url('{% static "images/background.jpg"%}')";#}
+<body >
+{#{% include 'snippets/navbar.html' %}#}
+{% block navbar_content %}{% endblock navbar_content%}
+
+{% block content %}
+
+
+{% endblock content%}
+
+{% include 'snippets/footer.html' %}
+
+{% include 'snippets/js.html' %}
+{% block custom_js %}  {% endblock custom_js %}
+{#<script type="text/javascript">#}
+{##}
+{##}
+{#        function upload_img(input) {#}
+{#            if (input.files && input.files[0]) {#}
+{#                var reader = new FileReader();#}
+{##}
+{#                reader.onload = function (e) {#}
+{#                    $('#img_id').attr('src', e.target.result);#}
+{#                }#}
+{##}
+{#                reader.readAsDataURL(input.files[0]);#}
+{#            }#}
+{#        }#}
+{##}
+{#        $("#id_image").change(function(){#}
+{#            upload_img(this);#}
+{#        });#}
+{##}
+{#    </script>#}
+
+</body>
+</html>

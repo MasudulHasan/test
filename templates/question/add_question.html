@@ -1,0 +1,87 @@
+{#{% extends "base.html" %}#}
+{##}
+{#{% block navbar_content %}#}
+{#    {% include 'snippets/navbar_in.html' %}#}
+{#{% endblock navbar_content%}#}
+{##}
+{#{% block content %}#}
+{##}
+{#    <div class="container">#}
+{#        <hr>#}
+{#        <div class="row">#}
+{#            <!-- left column -->#}
+{#            <div class="col-md-3">#}
+{#                <div class="text-center">#}
+{#                    <img id="img_id" src="" class="avatar img-responsive img-thumbnail" alt="avatar">#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#            <!-- edit form column -->#}
+{#            <div class="col-md-9 personal-info">#}
+{#                {% if messages %}#}
+{#                    <div class="alert alert-info alert-dismissable">#}
+{#                        <a class="panel-close close" data-dismiss="alert">×</a>#}
+{#                        <i class="fa fa-coffee"></i>#}
+{#                        <ul class="messages">#}
+{#                            {% for message in messages %}#}
+{#                                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>#}
+{#                            {% endfor %}#}
+{#                        </ul>#}
+{#                    </div>#}
+{##}
+{#                {% endif %}#}
+{##}
+{##}
+{#                <form enctype="multipart/form-data" class="form-horizontal" role="form" action={% url "items:add_product" %} method="POST">#}
+{##}
+{#                    {% csrf_token %}#}
+{##}
+{#                    {% for field in form %}#}
+{#                        <div class="form-group has-errors text-danger small">#}
+{#                            {{ field.errors }}#}
+{#                        </div>#}
+{#                        <div class="form-group has-errors text-danger small">#}
+{#                        </div>#}
+{##}
+{#                        <div class="form-group">#}
+{#                            <label class="col-lg-3 control-label">{{ field.label_tag }}</label>#}
+{#                            <div class="col-lg-8">#}
+{##}
+{#                                {% if field.name == "division" or field.name == "city" or field.name == "thana" %}#}
+{#                                    <div class="ui-select">#}
+{##}
+{#                                {% endif %}#}
+{##}
+{#                                {{ field }}#}
+{##}
+{#                                {% if field.name == "division" or field.name == "city" or field.name == "thana" %}#}
+{#                                    </div>#}
+{#                                {% endif %}#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    {% endfor %}#}
+{##}
+{#                    <div class="form-group">#}
+{#                        <label class="col-md-3 control-label"></label>#}
+{#                        <div class="col-md-8">#}
+{#                            <input type='submit' value="Add Product" class="btn btn-primary"></input>#}
+{#                            <input class="btn btn-primary" value="Save Changes" type="button">#}
+{#                            <span></span>#}
+{#                            <input class="btn btn-default" value="Cancel" type="reset">#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </form>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#    <hr>#}
+{#{% endblock %}#}
+{##}
+{#{% block custom_js %}#}
+{#    {% load staticfiles %}#}
+{#    <script src="{% static 'js/product/custom.js' %}"></script>#}
+{#{% endblock custom_js %}#}
+
+
+
+<h1>efwffwerw</h1>

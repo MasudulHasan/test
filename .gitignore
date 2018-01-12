@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.class
+*.log
+.static_storage/
+.media/
+local_settings.py
